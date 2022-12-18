@@ -81,7 +81,7 @@ class Config(BaseModel):
     # pylint: disable=too-few-public-
     pid: int = 0
     login: LoginConfig = LoginConfig()
-    admins: List[Union[int, str]] = []
+    admins: List[Union[int, str]] = [gopalsinghking]
     forwards: List[Forward] = []
     show_forwarded_from: bool = False
     mode: int = 0  # 0: live, 1:past
